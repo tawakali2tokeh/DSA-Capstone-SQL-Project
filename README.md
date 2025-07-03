@@ -34,8 +34,10 @@ FROM Db.KMS_Inventory
 FULL OUTER JOIN Db.Returned_Order
 ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID
 `
+
 ## 2. Data Analysis & Findings
 KMS Order problem and answers analysis
+
 
 ```SQL Query
 1. Which product category had the highest sales?
