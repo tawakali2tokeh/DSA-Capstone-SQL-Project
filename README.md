@@ -5,7 +5,7 @@
 ### 1. Database Setup
 
 - **Database Creation:**  
-I  Created a database named `KMS` to serve as the foundation for all my data operations.
+I created a database named `KMS` to serve as the foundation for all my data operations.
 
 - **Schema Design:**  
  I created a schema named `Db` with `Database Owner` privileges to organize database objects.
@@ -34,3 +34,14 @@ FROM Db.KMS_Inventory
 FULL OUTER JOIN Db.Returned_Order
 ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID
 `
+## 2. Data Analysis & Findings
+KMS Order problem and answers analysis
+
+```SQL Query
+1. Which product category had the highest sales?
+
+SELECT TOP 1 Product_Category, 
+SUM(SALES) AS Highest_Sales
+FROM Db.KMS_Inventory
+GROUP BY Product_Category
+ORDER BY Highest_Sales desc
