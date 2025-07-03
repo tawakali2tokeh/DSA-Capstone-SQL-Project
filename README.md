@@ -46,8 +46,9 @@ SELECT TOP 1 Product_Category,
 SUM(Sales) AS Highest_Sales
 FROM Db.KMS_Inventory
 GROUP BY Product_Category
+ORDER BY Highest_Sales desc
 ```
-![t1](https://github.com/user-attachments/assets/883778ad-b932-4ce3-b9eb-3f5542c4be0c)
+![nn](https://github.com/user-attachments/assets/58ef5390-27e7-4884-8ca3-e335d60a128d)
 
 *2. What are the Top 3 and Bottom 3 regions in terms of sales?*
 
@@ -65,7 +66,7 @@ FROM Db.KMS_Inventory
 GROUP BY Region
 ORDER BY Lowest_Region_Sales ASC
 ```
-![Table 2](https://github.com/user-attachments/assets/f929ccc0-2620-4d2f-be74-ea38b0843691)
+![22](https://github.com/user-attachments/assets/d3125915-b048-48f4-8290-ceded87f2e1a)
 
 *3. What were the total sales of appliances in Ontario?*
 
@@ -74,7 +75,7 @@ SELECT SUM(Sales) AS Total_Ontario_Appliances_Sales
 FROM Db.KMS_Inventory
 WHERE Product_Sub_Category = 'Appliances' AND Region = 'Ontario'
 ```
-![table3](https://github.com/user-attachments/assets/57e4b047-c789-4e79-8373-301471fb88c6)
+![333](https://github.com/user-attachments/assets/77d50863-e042-4b67-b3d2-397efc8f8f49)
 
 *4. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers*
 
