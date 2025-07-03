@@ -44,7 +44,7 @@ KMS Order problem and answers analysis
 1. Which product category had the highest sales?
 
 
-```SQL Query`
+```SQL Query
 SELECT TOP 1 Product_Category, 
 SUM(SALES) AS Highest_Sales
 FROM Db.KMS_Inventory
