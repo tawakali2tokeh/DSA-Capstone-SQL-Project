@@ -89,6 +89,7 @@ FROM Db.KMS_Inventory
 GROUP BY Customer_Name
 ORDER BY Lowest_Customer_Sales ASC
 ```
+![table4](https://github.com/user-attachments/assets/b14be765-aa31-4eac-bae7-5bc3bf3efdfb)
 
 *5. KMS incurred the most shipping cost using which shipping method?*
 
