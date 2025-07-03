@@ -76,7 +76,7 @@ SELECT SUM(SALES) AS TOTAL_ONTARIO_APPLIANCES_SALES
 FROM Db.KMS_Inventory
 WHERE PRODUCT_SUB_CATEGORY = 'APPLIANCES' AND REGION = 'ONTARIO'
 ```
-https://github.com/tawakali2tokeh/DSA-Capstone-SQL-Project/raw/main/Table3.png
+Table3.png
 
 *4. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers*
 
