@@ -45,7 +45,7 @@ KMS Order problem and answers analysis
 SELECT TOP 1 Product_Category, 
 SUM(SALES) AS Highest_Sales
 FROM Db.KMS_Inventory
-GROUP BY Product_Category
+GROUP BY Product_Category`
 
 https://github.com/tawakali2tokeh/DSA-Capstone-SQL-Project/blob/main/Table1.png
 ![Table1(1)](https://github.com/user-attachments/assets/50fc00d1-d7d5-4652-9f01-db16f4cca063.png)
