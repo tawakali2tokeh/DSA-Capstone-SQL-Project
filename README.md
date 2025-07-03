@@ -159,6 +159,7 @@ SELECT DISTINCT Customer_Name, Customer_Segment, [STATUS]
 FROM Db.KMS_VIEW
 WHERE [STATUS] = 'Returned'
 ```
+![t10](https://github.com/user-attachments/assets/b61b53b4-8de5-4b06-b0bc-e40481bef1b3)
 
 *11. If the delivery truck is the most economical but the slowest shipping method and
 express air is the fastest but the most expensive one, do you think the company
