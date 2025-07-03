@@ -19,5 +19,18 @@ I  Created a database named `KMS` to serve as the foundation for all my data ope
   - **`Returned_Orders` Table:**  
     Contains `Order_Id` and `Status` columns, representing order return statuses.
 
-- **Table Joining:**  
- I  joined `KMS_Inventory` and `Returned_Orders` tables on `Order_Id` to facilitate comprehensive analysis of order details alongside return statuses.
+- **Table Joining and View Creation:**  
+I joined the `KMS_Inventory` and `Returned_Orders` tables on `Order_Id` to enable comprehensive analysis of order details and return statuses, and I created a view named `Db.KMS_VIEW` to facilitate this.
+
+```SQL Query
+CREATE VIEW Db.KMS_VIEW
+AS
+SELECT Db.KMS_Inventory.ORDER_ID, 
+Db.KMS_Inventory.SALES, 
+Db.KMS_Inventory.CUSTOMER_NAME, 
+Db.KMS_Inventory.CUSTOMER_SEGMENT, 
+Db.Returned_Order.[Status]
+FROM Db.KMS_Inventory
+FULL OUTER JOIN Db.Returned_Order
+ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID
+`
