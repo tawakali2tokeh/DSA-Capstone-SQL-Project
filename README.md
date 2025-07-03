@@ -11,7 +11,8 @@ I created a database named `KMS` to serve as the foundation for all my data oper
  I created a schema named `Db` with `Database Owner` privileges to organize database objects.
 
 - **Data Import and Table Preparation:**  
-  I imported two datasets into the database, and named them `KMS_Inventory` and `Returned_Orders`, respectively, and performed necessary data cleaning to ensure data quality and consistency.
+  I imported two datasets into the database, and named them `KMS_Inventory` and `Returned_Orders`, respectively, and performed necessary data cleaning to ensure data 
+quality and consistency.
 
   - **`Db.KMS_Inventory` Table:**  
     Contains columns such as `Order_Row`, `Order_ID`, `Order_Date`, `Order_Priority`, `Order_Quantity`, `Sales`, `Discount`, `Ship_Mode`, `Profit`, `Unit_Price`, `Shipping_Cost`, `Customer_Name`, `Province`, `Region`, `Customer_Segment`, `Product_Sub_Category`, `Product_Name`, `Product_Container`, `Product_Base_Margin`, `Ship_Date`. I adjusted the column data types to ensure data integrity and compatibility.
@@ -73,7 +74,7 @@ SELECT SUM(SALES) AS TOTAL_ONTARIO_APPLIANCES_SALES
 FROM Db.KMS_Inventory
 WHERE PRODUCT_SUB_CATEGORY = 'APPLIANCES' AND REGION = 'ONTARIO'
 ```
-
+![table3](https://github.com/user-attachments/assets/57e4b047-c789-4e79-8373-301471fb88c6)
 
 *4. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers*
 
