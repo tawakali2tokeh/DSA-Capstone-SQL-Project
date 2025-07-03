@@ -91,3 +91,14 @@ GROUP BY Customer_Name
 ORDER BY Lowest_Customer_Sales ASC
 ```
 
+5. KMS incurred the most shipping cost using which shipping method?
+
+```SQL
+SELECT TOP 1 Ship_Mode, 
+SUM(Shipping_Cost) AS Highest_Shipping_Mode
+FROM Db.KMS_Inventory
+GROUP BY Ship_Mode
+ORDER BY Highest_Shipping_Mode DESC
+```
+
+```
