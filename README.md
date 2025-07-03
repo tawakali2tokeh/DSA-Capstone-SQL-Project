@@ -22,7 +22,7 @@ I created a database named `KMS` to serve as the foundation for all my data oper
 - **Table Joining and View Creation:**  
 I joined the `Db.KMS_Inventory` and `Db.Returned_Orders` tables on `Order_Id` to enable comprehensive analysis of order details and return statuses, and I created a view named `Db.KMS_VIEW` to facilitate this.
 
-```SQL Query
+```SQL Query`
 CREATE VIEW Db.KMS_VIEW
 AS
 SELECT Db.KMS_Inventory.ORDER_ID, 
@@ -33,19 +33,19 @@ Db.Returned_Order.[Status]
 FROM Db.KMS_Inventory
 FULL OUTER JOIN Db.Returned_Order
 ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID;
-`
+```
 
 ## 2. Data Analysis & Findings
 KMS Order problem and answers analysis
 
 
-```SQL Query
+```SQL Query`
 1. Which product category had the highest sales?
 
 SELECT TOP 1 Product_Category, 
 SUM(SALES) AS Highest_Sales
 FROM Db.KMS_Inventory
-GROUP BY Product_Category;
+GROUP BY Product_Category```
 
 https://github.com/tawakali2tokeh/DSA-Capstone-SQL-Project/blob/main/Table1.png
 
