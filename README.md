@@ -26,7 +26,7 @@ I joined the `Db.KMS_Inventory` and `Db.Returned_Orders` tables on `Order_ID` to
 ```sql
 CREATE VIEW Db.KMS_VIEW
 AS
-SELECT Db.KMS_Inventory.ORDER_ID,
+SELECT Db.KMS_Inventory.Order_ID,
 Db.KMS_Inventory.Sales,
  Db.KMS_Inventory.Customer_Name,
 Db.KMS_Inventory.Customer_Segment,
@@ -59,10 +59,10 @@ GROUP BY Region
 ORDER BY Highest_Region_Sales DESC
 ```
 ```SQL
-SELECT TOP 3 REGION, 
+SELECT TOP 3 Region, 
 SUM (Sales) AS Lowest_Region_Sales
 FROM Db.KMS_Inventory
-GROUP BY REGION
+GROUP BY Region
 ORDER BY Lowest_Region_Sales ASC
 ```
 ![Table 2](https://github.com/user-attachments/assets/f929ccc0-2620-4d2f-be74-ea38b0843691)
@@ -70,9 +70,9 @@ ORDER BY Lowest_Region_Sales ASC
 *3. What were the total sales of appliances in Ontario?*
 
 ```SQL
-SELECT SUM(SALES) AS TOTAL_ONTARIO_APPLIANCES_SALES
+SELECT SUM(Sales) AS Total_Ontario_Appliances_Sales
 FROM Db.KMS_Inventory
-WHERE PRODUCT_SUB_CATEGORY = 'APPLIANCES' AND REGION = 'ONTARIO'
+WHERE Product_Sub_Category = 'Appliances' AND Region = 'Ontario'
 ```
 ![table3](https://github.com/user-attachments/assets/57e4b047-c789-4e79-8373-301471fb88c6)
 
