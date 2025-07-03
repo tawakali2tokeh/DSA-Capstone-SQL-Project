@@ -53,8 +53,7 @@ GROUP BY Product_Category
 
 2. What are the Top 3 and Bottom 3 regions in terms of sales?
 
-   ```SQL
-   
+ ```SQL 
 SELECT TOP 3  REGION,
 SUM(SALES) AS HIGHEST_REGION_SALES
 FROM Db.KMS_Inventory
@@ -63,7 +62,6 @@ ORDER BY HIGHEST_REGION_SALES DESC
 ```
 
 ```SQL
-
 SELECT TOP 3 REGION, 
 SUM (SALES) AS LOWEST_REGION_SALES
 FROM Db.KMS_Inventory
