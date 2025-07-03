@@ -22,7 +22,7 @@ I created a database named `KMS` to serve as the foundation for all my data oper
 - **Table Joining and View Creation:**  
 I joined the `Db.KMS_Inventory` and `Db.Returned_Orders` tables on `Order_Id` to enable comprehensive analysis of order details and return statuses, and I created a view named `Db.KMS_VIEW` to facilitate this.
 
-```sql
+```sql`
 CREATE VIEW Db.KMS_VIEW
 AS
 SELECT Db.KMS_Inventory.ORDER_ID, 
