@@ -101,4 +101,14 @@ GROUP BY Ship_Mode
 ORDER BY Highest_Shipping_Mode DESC
 ```
 
+Who are the most valuable customers, and what products or services do they typically
+purchase?
+
+```SQL
+SELECT TOP 10 Customer_Name, 
+Product_Name, SUM(Sales) AS Top_Customers,
+SUM (Profit) AS Total_Profit
+FROM Db.KMS_Inventory
+GROUP BY Ccustomer_Name, Product_Name
+ORDER BY Top_Customers DESC
 ```
