@@ -35,9 +35,6 @@ FULL OUTER JOIN Db.Returned_Order
 ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID
 ```
 
-
-
-
 ## 2. Data Analysis & Findings
 KMS Order problem and answers analysis
 
@@ -68,7 +65,7 @@ FROM Db.KMS_Inventory
 GROUP BY REGION
 ORDER BY Lowest_Region_Sales ASC
 ```
-
+![Table 2](https://github.com/user-attachments/assets/f929ccc0-2620-4d2f-be74-ea38b0843691)
 *3. What were the total sales of appliances in Ontario?*
 
 ```SQL
