@@ -125,6 +125,7 @@ WHERE Customer_Segment = 'Small Business'
 GROUP BY Customer_Name, Customer_Segment
 order by Small_Business_Highest_Sales DESC
 ```
+![t7](https://github.com/user-attachments/assets/a4cfbb63-8bd4-4090-9adc-ab49b2791baf)
 
 *8. Which Corporate Customer placed the most number of orders in 2009 – 2012*
 
