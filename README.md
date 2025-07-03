@@ -150,6 +150,7 @@ WHERE Customer_Segment = 'Consumer'
 GROUP BY Customer_Name, Customer_Segment
 ORDER BY Consumer_Customer_Most_Profitable DESC
 ````
+![t9](https://github.com/user-attachments/assets/806f0cdb-30bf-4bce-9ca0-0c5b1896eadd)
 
 *10. Which customer returned items, and what segment do they belong to?*
 
