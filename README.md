@@ -32,7 +32,7 @@ SELECT Db.KMS_Inventory.ORDER_ID,
        Db.Returned_Order.[Status]
 FROM Db.KMS_Inventory
 FULL OUTER JOIN Db.Returned_Order
-ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID;.
+ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID```
 
 
 ## 2. Data Analysis & Findings
