@@ -163,11 +163,11 @@ ORDER BY Consumer_Customer_Most_Profitable DESC
 *10. Which customer returned items, and what segment do they belong to?*
 
 ```SQL
-SELECT DISTINCT Customer_Name, Customer_Segment, [STATUS]
+SELECT DISTINCT Customer_Name, Customer_Segment, [Status]
 FROM Db.KMS_VIEW
-WHERE [STATUS] = 'Returned'
+WHERE [Status] = 'Returned'
 ```
-![t10](https://github.com/user-attachments/assets/b61b53b4-8de5-4b06-b0bc-e40481bef1b3)
+![110](https://github.com/user-attachments/assets/dd9c1889-3bf2-40ea-bb3d-14a37206ccbc)
 
 *11. If the delivery truck is the most economical but the slowest shipping method and
 express air is the fastest but the most expensive one, do you think the company
@@ -184,6 +184,7 @@ ORDER BY Order_Priority, Ship_Mode
 ```
 ![t11](https://github.com/user-attachments/assets/84a8bede-755a-4eab-8550-d477ae3ea1c1)
 
+*Answer:*
 - No, Since Express air is the fastest and most expensive shipping option, it should be reserved for transporting critical and high-priority orders. Trucks, which are more affordable, should be used for transporting low, medium, and unspecified orders.
 
 ## Insights
