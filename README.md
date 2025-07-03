@@ -113,6 +113,7 @@ FROM Db.KMS_Inventory
 GROUP BY Customer_Name, Product_Name
 ORDER BY Top_Customers DESC
 ```
+![table6](https://github.com/user-attachments/assets/6d5e263a-13dc-4aad-aadb-2895a91ebee9)
 
 *7. Which small business customer had the highest sales?*
 
