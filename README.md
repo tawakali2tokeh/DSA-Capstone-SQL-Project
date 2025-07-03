@@ -46,4 +46,7 @@ SELECT TOP 1 Product_Category,
 SUM(SALES) AS Highest_Sales
 FROM Db.KMS_Inventory
 GROUP BY Product_Category
+
+![image](https://github.com/user-attachments/assets/87741adb-a50d-41e9-b738-8eba47db681a)
+
 ORDER BY Highest_Sales desc
