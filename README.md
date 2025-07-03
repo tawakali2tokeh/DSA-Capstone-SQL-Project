@@ -47,7 +47,7 @@ SUM(Sales) AS Highest_Sales
 FROM Db.KMS_Inventory
 GROUP BY Product_Category
 ```
-![Table1(1)](https://github.com/user-attachments/assets/9717f139-2d6e-48b8-8b4e-8c6ea012b9e7)
+![t1](https://github.com/user-attachments/assets/883778ad-b932-4ce3-b9eb-3f5542c4be0c)
 
 *2. What are the Top 3 and Bottom 3 regions in terms of sales?*
 
