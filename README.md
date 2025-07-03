@@ -76,3 +76,18 @@ SELECT SUM(SALES) AS TOTAL_ONTARIO_APPLIANCES_SALES
 FROM Db.KMS_Inventory
 WHERE PRODUCT_SUB_CATEGORY = 'APPLIANCES' AND REGION = 'ONTARIO'
 ```
+
+4. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers
+
+```SQL
+SELECT TOP 10 Customer_Name, 
+SUM (Sales) AS Lowest_Customer_Sales, 
+SUM(Profit) AS Total_PROFIT,
+SUM (Shipping_Cost) AS Total_Shipping_Cost, 
+SUM(Discount) AS Total_Discount, 
+COUNT(Order_ID) AS Total_Order
+FROM Db.KMS_Inventory
+GROUP BY Customer_Name
+ORDER BY Lowest_Customer_Sales ASC
+```
+
