@@ -51,6 +51,5 @@ FROM Db.KMS_Inventory
 GROUP BY Product_Category
 ```
 
-https://github.com/tawakali2tokeh/DSA-Capstone-SQL-Project/blob/main/Table1.png
 
 
