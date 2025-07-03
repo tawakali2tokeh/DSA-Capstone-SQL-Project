@@ -183,4 +183,16 @@ ORDER BY Order_Priority, Ship_Mode
 ```
 ![t11](https://github.com/user-attachments/assets/84a8bede-755a-4eab-8550-d477ae3ea1c1)
 
-- Since Express air is the fastest and most expensive shipping option, it should be reserved for transporting critical and high-priority orders. Trucks, which are more affordable, should be used for transporting low, medium, and unspecified orders.
+- No, Since Express air is the fastest and most expensive shipping option, it should be reserved for transporting critical and high-priority orders. Trucks, which are more affordable, should be used for transporting low, medium, and unspecified orders.
+
+## Insights
+- I identified the most profitable customers and the products they purchased.
+- I determined products with the highest sales.
+- I find out that the company incurs the highest shipping costs through delivery trucks.
+
+
+## Conclusion
+This analysis can enables the business owners to: 
+- Identify their key products and customer segments for targeted marketing.
+- Make informed decisions regarding shipping modes based on order priority and cost efficiency.
+- Improve overall sales and logistics strategies to maximize profitability
