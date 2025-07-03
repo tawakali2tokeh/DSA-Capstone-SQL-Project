@@ -41,7 +41,7 @@ ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID
 ## 2. Data Analysis & Findings
 KMS Order problem and answers analysis
 
-1. Which product category had the highest sales?
+*1. Which product category had the highest sales?*
 
 
 ```SQL Query
@@ -51,7 +51,7 @@ FROM Db.KMS_Inventory
 GROUP BY Product_Category
 ```
 
-2. What are the Top 3 and Bottom 3 regions in terms of sales?
+*2. What are the Top 3 and Bottom 3 regions in terms of sales?*
 
  ```SQL 
 SELECT TOP 3  REGION,
@@ -69,7 +69,7 @@ GROUP BY REGION
 ORDER BY LOWEST_REGION_SALES ASC
 ```
 
-3. What were the total sales of appliances in Ontario?
+*3. What were the total sales of appliances in Ontario?*
 
 ```SQL
 SELECT SUM(SALES) AS TOTAL_ONTARIO_APPLIANCES_SALES
@@ -77,7 +77,7 @@ FROM Db.KMS_Inventory
 WHERE PRODUCT_SUB_CATEGORY = 'APPLIANCES' AND REGION = 'ONTARIO'
 ```
 
-4. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers
+*4. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers*
 
 ```SQL
 SELECT TOP 10 Customer_Name, 
@@ -91,7 +91,7 @@ GROUP BY Customer_Name
 ORDER BY Lowest_Customer_Sales ASC
 ```
 
-5. KMS incurred the most shipping cost using which shipping method?
+*5. KMS incurred the most shipping cost using which shipping method?*
 
 ```SQL
 SELECT TOP 1 Ship_Mode, 
@@ -101,14 +101,69 @@ GROUP BY Ship_Mode
 ORDER BY Highest_Shipping_Mode DESC
 ```
 
-Who are the most valuable customers, and what products or services do they typically
-purchase?
+*6. Who are the most valuable customers, and what products or services do they typically
+purchase?*
 
 ```SQL
 SELECT TOP 10 Customer_Name, 
 Product_Name, SUM(Sales) AS Top_Customers,
 SUM (Profit) AS Total_Profit
 FROM Db.KMS_Inventory
-GROUP BY Ccustomer_Name, Product_Name
+GROUP BY Customer_Name, Product_Name
 ORDER BY Top_Customers DESC
+```
+
+*7. Which small business customer had the highest sales?*
+
+```SQL
+SELECT TOP 1 Customer_Name, Customer_Segment,  
+SUM(SALES) AS Small_Business_Highest_Sales
+FROM  Db.KMS_Inventory
+WHERE Customer_Segment = 'Small Business'
+GROUP BY Customer_Name, Customer_Segment
+order by Small_Business_Highest_Sales DESC
+```
+
+*8. Which Corporate Customer placed the most number of orders in 2009 – 2012*
+
+```SQL
+SELECT TOP 1 Customer_Name, Customer_Segment, 
+count (Order_ID) as Most_Order
+FROM Db.KMS_Inventory
+WHERE Customer_Segment = 'Corporate' and Order_Date >= '2009-01-01' and Order_date <= '2012-12-31'
+GROUP by Customer_Name, Customer_Segment
+ORDER BY Most_Order DESC
+```
+
+*9. Which consumer customer was the most profitable one?*
+
+```SQL
+SELECT TOP 1 Customer_Name, Customer_Segment, 
+SUM(Profit) AS Consumer_Customer_Most_Profitable
+FROM Db.KMS_Inventory
+WHERE Customer_Segment = 'Consumer'
+GROUP BY Customer_Name, Customer_Segment
+ORDER BY Consumer_Customer_Most_Profitable DESC
+````
+
+*10. Which customer returned items, and what segment do they belong to?*
+
+```SQL
+SELECT DISTINCT Customer_Name, Customer_Segment, [STATUS]
+FROM Db.KMS_VIEW
+WHERE [STATUS] = 'Returned'
+```
+
+*11. If the delivery truck is the most economical but the slowest shipping method and
+express air is the fastest but the most expensive one, do you think the company
+appropriately spent shipping costs based on the Order Priority? Explain your answer*
+
+```SQL
+SELECT Ship_Mode, Order_Priority,
+SUM(Shipping_Cost) AS Total_Shipping_Cost,
+AVG(Shipping_Cost) AS Average_Shipping_Cost
+FROM Db.KMS_Inventory
+WHERE Ship_Mode IN ('Express Air', 'Delivery Truck')
+GROUP BY Order_Priority, Ship_Mode
+ORDER BY Order_Priority, Ship_Mode
 ```
