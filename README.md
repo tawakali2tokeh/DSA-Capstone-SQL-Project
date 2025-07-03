@@ -174,3 +174,4 @@ WHERE Ship_Mode IN ('Express Air', 'Delivery Truck')
 GROUP BY Order_Priority, Ship_Mode
 ORDER BY Order_Priority, Ship_Mode
 ```
+![t11](https://github.com/user-attachments/assets/84a8bede-755a-4eab-8550-d477ae3ea1c1)
