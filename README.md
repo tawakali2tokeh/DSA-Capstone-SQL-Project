@@ -91,6 +91,13 @@ ORDER BY Lowest_Customer_Sales ASC
 ```
 ![table4](https://github.com/user-attachments/assets/b14be765-aa31-4eac-bae7-5bc3bf3efdfb)
 
+Answer:
+- Customer Engagement and Feedback: The company should hold one-on-one sessions with customers to understand why they aren't patronizing the business as much ans the company should also get product reviews and ratings from customers to identify areas for improvement.
+
+- Order Management and Timeliness: The company should prioritize its own order processing and delivery, placing the same importance on timely orders as customers do and ensuring that orders are delivered on time for customer's satisfaction
+   
+- Customer Service: Providing good customer service is a significant plus and can help retain customers and encourage repeat business.
+
 *5. KMS incurred the most shipping cost using which shipping method?*
 
 ```SQL
@@ -175,3 +182,5 @@ GROUP BY Order_Priority, Ship_Mode
 ORDER BY Order_Priority, Ship_Mode
 ```
 ![t11](https://github.com/user-attachments/assets/84a8bede-755a-4eab-8550-d477ae3ea1c1)
+
+- Since Express air is the fastest and most expensive shipping option, it should be reserved for transporting critical and high-priority orders. Trucks, which are more affordable, should be used for transporting low, medium, and unspecified orders.
