@@ -47,3 +47,5 @@ SUM(SALES) AS Highest_Sales
 FROM Db.KMS_Inventory
 GROUP BY Product_Category
 
+Table1.png
+
