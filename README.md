@@ -42,8 +42,6 @@ ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID
 KMS Order problem and answers analysis
 
 *1. Which product category had the highest sales?*
-![Table1](https://github.com/user-attachments/assets/731be170-bcd9-49c7-90f5-635655a6e0c0)
-
 
 ```SQL Query
 SELECT TOP 1 Product_Category, 
@@ -51,6 +49,7 @@ SUM(Sales) AS Highest_Sales
 FROM Db.KMS_Inventory
 GROUP BY Product_Category
 ```
+![Table1](https://github.com/user-attachments/assets/731be170-bcd9-49c7-90f5-635655a6e0c0)
 
 *2. What are the Top 3 and Bottom 3 regions in terms of sales?*
 
