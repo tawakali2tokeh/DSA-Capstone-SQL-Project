@@ -47,7 +47,6 @@ FROM Db.KMS_Inventory
 GROUP BY Product_Category
 ```
 ![Table1](https://github.com/user-attachments/assets/731be170-bcd9-49c7-90f5-635655a6e0c0)
-
 *2. What are the Top 3 and Bottom 3 regions in terms of sales?*
 
  ```SQL 
@@ -57,14 +56,14 @@ FROM Db.KMS_Inventory
 GROUP BY Region
 ORDER BY Highest_Region_Sales DESC
 ```
-
 ```SQL
 SELECT TOP 3 REGION, 
 SUM (Sales) AS Lowest_Region_Sales
 FROM Db.KMS_Inventory
 GROUP BY REGION
 ORDER BY Lowest_Region_Sales ASC
-```
+
+
 ![Table 2](https://github.com/user-attachments/assets/f929ccc0-2620-4d2f-be74-ea38b0843691)
 *3. What were the total sales of appliances in Ontario?*
 
