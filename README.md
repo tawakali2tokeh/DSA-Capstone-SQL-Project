@@ -48,5 +48,6 @@ FROM Db.KMS_Inventory
 GROUP BY Product_Category
 
 
+![Table1(1)](https://github.com/user-attachments/assets/50fc00d1-d7d5-4652-9f01-db16f4cca063)
+![Table1](https://github.com/user-attachments/assets/f437d5a0-544e-47ee-ab51-7001c4f007f9).jpg?raw=true
 
-![Table1](https://github.com/user-attachments/assets/7ca5a501-83e3-4c6b-8e9e-4316ac653247)png? raw=true
