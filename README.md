@@ -13,22 +13,22 @@ I  Created a database named `KMS` to serve as the foundation for all my data ope
 - **Data Import and Table Preparation:**  
   I imported two datasets into the database, and named them `KMS_Inventory` and `Returned_Orders`, respectively, and performed necessary data cleaning to ensure data quality and consistency.
 
-  - **`KMS_Inventory` Table:**  
+  - **`Db.KMS_Inventory` Table:**  
     Contains columns such as `Order_Row`, `Order_Id`, `Order_Date`, `Order_Priority`, `Order_Quantity`, `Sales`, `Discount`, `Ship_Mode`, `Profit`, `Unit_Price`, `Shipping_Cost`, `Customer_Name`, `Province`, `Region`, `Customer_Segment`, `Product_Sub_Category`, `Product_Name`, `Product_Container`, `Product_Base_Margin`, `Ship_Date`. I adjusted the column data types to ensure data integrity and compatibility.
   
-  - **`Returned_Orders` Table:**  
+  - **`Db.Returned_Orders` Table:**  
     Contains `Order_Id` and `Status` columns, representing order return statuses.
 
 - **Table Joining and View Creation:**  
-I joined the `KMS_Inventory` and `Returned_Orders` tables on `Order_Id` to enable comprehensive analysis of order details and return statuses, and I created a view named `Db.KMS_VIEW` to facilitate this.
+I joined the `Db.KMS_Inventory` and `Db.Returned_Orders` tables on `Order_Id` to enable comprehensive analysis of order details and return statuses, and I created a view named `Db.KMS_VIEW` to facilitate this.
 
 ```SQL Query
 CREATE VIEW Db.KMS_VIEW
 AS
 SELECT Db.KMS_Inventory.ORDER_ID, 
-Db.KMS_Inventory.SALES, 
-Db.KMS_Inventory.CUSTOMER_NAME, 
-Db.KMS_Inventory.CUSTOMER_SEGMENT, 
+Db.KMS_Inventory.Sales, 
+Db.KMS_Inventory.Customer_Name, 
+Db.KMS_Inventory.Customer_Segment, 
 Db.Returned_Order.[Status]
 FROM Db.KMS_Inventory
 FULL OUTER JOIN Db.Returned_Order
