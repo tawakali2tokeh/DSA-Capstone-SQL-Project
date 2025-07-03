@@ -138,6 +138,7 @@ AND Order_Date >= '2009-01-01' and Order_date <= '2012-12-31'
 GROUP by Customer_Name, Customer_Segment
 ORDER BY Most_Order DESC
 ```
+![t8](https://github.com/user-attachments/assets/de4310e1-7f74-407e-a0f6-acc17bd70aa3)
 
 *9. Which consumer customer was the most profitable one?*
 
