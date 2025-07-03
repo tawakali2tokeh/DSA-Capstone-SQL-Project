@@ -24,25 +24,16 @@ I joined the `Db.KMS_Inventory` and `Db.Returned_Orders` tables on `Order_Id` to
 
 ```sql
 CREATE VIEW Db.KMS_VIEW
-
 AS
-
 SELECT Db.KMS_Inventory.ORDER_ID,
- 
-       Db.KMS_Inventory.Sales,
-
-       Db.KMS_Inventory.Customer_Name,
-
-
-       Db.KMS_Inventory.Customer_Segment,
- 
-       Db.Returned_Order.[Status]
-
+Db.KMS_Inventory.Sales,
+ Db.KMS_Inventory.Customer_Name,
+Db.KMS_Inventory.Customer_Segment,
+Db.Returned_Order.[Status]
 FROM Db.KMS_Inventory
-
 FULL OUTER JOIN Db.Returned_Order
-
-ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID```
+ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID
+```
 
 
 
