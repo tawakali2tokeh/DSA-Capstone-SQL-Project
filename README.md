@@ -100,6 +100,7 @@ FROM Db.KMS_Inventory
 GROUP BY Ship_Mode
 ORDER BY Highest_Shipping_Mode DESC
 ```
+![table5](https://github.com/user-attachments/assets/d78b453b-5d56-4a0a-84aa-fbfd14e46397)
 
 *6. Who are the most valuable customers, and what products or services do they typically
 purchase?*
