@@ -14,13 +14,13 @@ I created a database named `KMS` to serve as the foundation for all my data oper
   I imported two datasets into the database, and named them `KMS_Inventory` and `Returned_Orders`, respectively, and performed necessary data cleaning to ensure data quality and consistency.
 
   - **`Db.KMS_Inventory` Table:**  
-    Contains columns such as `Order_Row`, `Order_Id`, `Order_Date`, `Order_Priority`, `Order_Quantity`, `Sales`, `Discount`, `Ship_Mode`, `Profit`, `Unit_Price`, `Shipping_Cost`, `Customer_Name`, `Province`, `Region`, `Customer_Segment`, `Product_Sub_Category`, `Product_Name`, `Product_Container`, `Product_Base_Margin`, `Ship_Date`. I adjusted the column data types to ensure data integrity and compatibility.
+    Contains columns such as `Order_Row`, `Order_ID`, `Order_Date`, `Order_Priority`, `Order_Quantity`, `Sales`, `Discount`, `Ship_Mode`, `Profit`, `Unit_Price`, `Shipping_Cost`, `Customer_Name`, `Province`, `Region`, `Customer_Segment`, `Product_Sub_Category`, `Product_Name`, `Product_Container`, `Product_Base_Margin`, `Ship_Date`. I adjusted the column data types to ensure data integrity and compatibility.
   
   - **`Db.Returned_Orders` Table:**  
-    Contains `Order_Id` and `Status` columns, representing order return statuses.
+    Contains `Order_ID` and `Status` columns, representing order return statuses.
 
 - **Table Joining and View Creation:**  
-I joined the `Db.KMS_Inventory` and `Db.Returned_Orders` tables on `Order_Id` to enable comprehensive analysis of order details and return statuses, and I created a view named `Db.KMS_VIEW` to facilitate this.
+I joined the `Db.KMS_Inventory` and `Db.Returned_Orders` tables on `Order_ID` to enable comprehensive analysis of order details and return statuses, and I created a view named `Db.KMS_VIEW` to facilitate this.
 
 ```sql
 CREATE VIEW Db.KMS_VIEW
@@ -46,7 +46,7 @@ KMS Order problem and answers analysis
 
 ```SQL Query
 SELECT TOP 1 Product_Category, 
-SUM(SALES) AS Highest_Sales
+SUM(Sales) AS Highest_Sales
 FROM Db.KMS_Inventory
 GROUP BY Product_Category
 ```
@@ -54,19 +54,19 @@ GROUP BY Product_Category
 *2. What are the Top 3 and Bottom 3 regions in terms of sales?*
 
  ```SQL 
-SELECT TOP 3  REGION,
-SUM(SALES) AS HIGHEST_REGION_SALES
+SELECT TOP 3  Region,
+SUM(Sales) AS Highest_Region_Sales
 FROM Db.KMS_Inventory
-GROUP BY REGION
-ORDER BY HIGHEST_REGION_SALES DESC
+GROUP BY Region
+ORDER BY Highest_Region_Sales DESC
 ```
 
 ```SQL
 SELECT TOP 3 REGION, 
-SUM (SALES) AS LOWEST_REGION_SALES
+SUM (Sales) AS Lowest_Region_Sales
 FROM Db.KMS_Inventory
 GROUP BY REGION
-ORDER BY LOWEST_REGION_SALES ASC
+ORDER BY Lowest_Region_Sales ASC
 ```
 
 *3. What were the total sales of appliances in Ontario?*
@@ -128,9 +128,10 @@ order by Small_Business_Highest_Sales DESC
 
 ```SQL
 SELECT TOP 1 Customer_Name, Customer_Segment, 
-count (Order_ID) as Most_Order
+COUNT (Order_ID) as Most_Order
 FROM Db.KMS_Inventory
-WHERE Customer_Segment = 'Corporate' and Order_Date >= '2009-01-01' and Order_date <= '2012-12-31'
+WHERE Customer_Segment = 'Corporate'
+AND Order_Date >= '2009-01-01' and Order_date <= '2012-12-31'
 GROUP by Customer_Name, Customer_Segment
 ORDER BY Most_Order DESC
 ```
