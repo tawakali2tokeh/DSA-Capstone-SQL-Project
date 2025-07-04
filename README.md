@@ -212,14 +212,10 @@ ORDER BY Order_Priority, Ship_Mode
 - No, Since Express air is the fastest and most expensive shipping option, it should be reserved for transporting critical and high-priority orders. Trucks, which are more affordable, should be used for transporting low, medium, and unspecified orders.
 
 ## Insights Based On Findings
-
 - Sales Insights: This analysis highlights products with high and low sales across various regions and customer segments.
 - Customer Insights: This analysis identifies the top customers, the most profitable customers, and the customers with the least activity.
-- Order Insights: This section provides details on order patterns, including customers with the highest and lowest order volumes, as well as customers who have returned orders.
-- Shipping Mode Insights: This analysis offers insights into the most effective shipping modes based on order priority and the company's shipping expenditure.
+- Order Insights: This analysis provides details on order patterns, including customers with the highest and lowest order volumes, as well as customers who have returned orders.
+- Shipping Mode Insight: This analysis offers insights into the most effective shipping modes based on order priority and the company's shipping expenditure.
 
-## Conclusion
-This analysis can enables the business owners to: 
-- Identify their key products and customer segments for targeted marketing.
-- Make informed decisions regarding shipping modes based on order priority and cost efficiency.
-- Improve overall sales and logistics strategies to maximize profitability
+## Conclusion  
+The findings from this analysis can help business owners identify key products and customer segments for targeted marketing strategies, as well as make informed decisions regarding shipping modes based on order priority and cost efficiency. This, in turn, can improve overall sales and logistics strategies to maximize profit.
