@@ -120,9 +120,7 @@ ORDER BY Lowest_Customer_Sales ASC
 
 Answer:
 - Customer Engagement and Feedback: The company should hold one-on-one sessions with customers to understand why they aren't patronizing the business as much and the company should also get product reviews and ratings from customers to identify areas for improvement.
-
-- Order Management and Timeliness: The company should prioritize its own order processing and delivery, placing the same importance on timely orders as customers do and ensuring that orders are delivered on time for customer's satisfaction
-   
+- Order Management and Timeliness: The company should prioritize its own order processing and delivery, placing the same importance on timely orders as customers do and ensuring that orders are delivered on time for customer's satisfaction   
 - Customer Service: Providing good customer service is a significant plus and can help retain customers and encourage repeat business.
 
 *5. KMS incurred the most shipping cost using which shipping method?*
