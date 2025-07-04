@@ -62,7 +62,7 @@ ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID
 ### SQL Commands and Clauses
 - I utilized `SELECT` command to specify data retrieval.
 - I used `GROUP BY` and `ORDER BY` to organize my result output.
-  ### KMS Order problem and answers analysis
+### KMS Order problem and answers analysis
 
 *1. Which product category had the highest sales?*
 
@@ -117,7 +117,7 @@ ORDER BY Lowest_Customer_Sales ASC
 ```
 ![table4](https://github.com/user-attachments/assets/b14be765-aa31-4eac-bae7-5bc3bf3efdfb)
 
-Answer:
+**Answer:**
 - Customer Engagement and Feedback: The company should hold one-on-one sessions with customers to understand why they aren't patronizing the business as much and the company should also get product reviews and ratings from customers to identify areas for improvement.
 - Order Management and Timeliness: The company should prioritize its own order processing and delivery, placing the same importance on timely orders as customers do and ensuring that orders are delivered on time for customer's satisfaction   
 - Customer Service: Providing good customer service is a significant plus and can help retain customers and encourage repeat business.
@@ -207,7 +207,7 @@ ORDER BY Order_Priority, Ship_Mode
 ```
 ![t11](https://github.com/user-attachments/assets/84a8bede-755a-4eab-8550-d477ae3ea1c1)
 
-*Answer:*
+**Answer:**
 - No, Since Express air is the fastest and most expensive shipping option, it should be reserved for transporting critical and high-priority orders. Trucks, which are more affordable, should be used for transporting low, medium, and unspecified orders.
 
 ## Insights Based On Findings
