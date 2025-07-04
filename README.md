@@ -22,12 +22,9 @@ I created a database named `KMS` to serve as the foundation for all my data oper
  I created a schema named `Db` with `Database Owner` privileges to organize database objects.
 
 - **Data Import and Table Preparation:**  
-  I imported two datasets into the database, and named them `KMS_Inventory` and `Returned_Orders`, respectively, and performed necessary data cleaning to ensure data 
-quality and consistency.
-
+  I imported two datasets into the database, and named them `KMS_Inventory` and `Returned_Orders`, respectively.
   - **`Db.KMS_Inventory` Table:**  
-    Contains columns such as `Order_Row`, `Order_ID`, `Order_Date`, `Order_Priority`, `Order_Quantity`, `Sales`, `Discount`, `Ship_Mode`, `Profit`, `Unit_Price`, `Shipping_Cost`, `Customer_Name`, `Province`, `Region`, `Customer_Segment`, `Product_Sub_Category`, `Product_Name`, `Product_Container`, `Product_Base_Margin`, `Ship_Date`.
-  
+    Contains columns such as `Order_Row`, `Order_ID`, `Order_Date`, `Order_Priority`, `Order_Quantity`, `Sales`, `Discount`, `Ship_Mode`, `Profit`, `Unit_Price`, `Shipping_Cost`, `Customer_Name`, `Province`, `Region`, `Customer_Segment`, `Product_Sub_Category`, `Product_Name`, `Product_Container`, `Product_Base_Margin`, `Ship_Date`. 
   - **`Db.Returned_Orders` Table:**  
     Contains `Order_ID` and `Status` columns, representing order return statuses.
 
@@ -55,10 +52,8 @@ ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID
 ### Data Transformation Aggregation
 - I used aggregate functions such as `SUM()` to get total sales and shipping costs.
 - I aggregated data to identify top customers and products based on sales amount.
-
 ### Filtering
 - I used `WHERE` clauses to focus on specific customer segments, such as "Small Business," to derive targeted insights.
-
 ### SQL Commands and Clauses
 - I utilized `SELECT` command to specify data retrieval.
 - I used `GROUP BY` and `ORDER BY` to organize my result output.
