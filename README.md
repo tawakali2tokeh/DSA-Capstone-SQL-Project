@@ -26,7 +26,7 @@ I created a database named `KMS` to serve as the foundation for all my data oper
 quality and consistency.
 
   - **`Db.KMS_Inventory` Table:**  
-    Contains columns such as `Order_Row`, `Order_ID`, `Order_Date`, `Order_Priority`, `Order_Quantity`, `Sales`, `Discount`, `Ship_Mode`, `Profit`, `Unit_Price`, `Shipping_Cost`, `Customer_Name`, `Province`, `Region`, `Customer_Segment`, `Product_Sub_Category`, `Product_Name`, `Product_Container`, `Product_Base_Margin`, `Ship_Date`. I adjusted the column data types to ensure data integrity and compatibility.
+    Contains columns such as `Order_Row`, `Order_ID`, `Order_Date`, `Order_Priority`, `Order_Quantity`, `Sales`, `Discount`, `Ship_Mode`, `Profit`, `Unit_Price`, `Shipping_Cost`, `Customer_Name`, `Province`, `Region`, `Customer_Segment`, `Product_Sub_Category`, `Product_Name`, `Product_Container`, `Product_Base_Margin`, `Ship_Date`.
   
   - **`Db.Returned_Orders` Table:**  
     Contains `Order_ID` and `Status` columns, representing order return statuses.
@@ -50,14 +50,14 @@ ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID
 ## 2. Data Analysis 
 
 ### Data Cleaning
-- I Converted data types for certain columns to ensure proper data handling. For example, transformed Customer ID from SMALLINT to INT to allow the column to accommodate larger  data.
+- I Converted data types for certain columns to ensure proper data handling. For example, I transformed Customer ID from SMALLINT to INT to allow the column to accommodate larger  data.
 
 ### Data Transformation Aggregation
 - I used aggregate functions such as `SUM()` to get total sales and shipping costs.
 - I aggregated data to identify top customers and products based on sales amount.
 
 ### Filtering
-- I applied `WHERE` clauses to focus on specific customer segments, such as "Small Business," to derive targeted insights.
+- I used `WHERE` clauses to focus on specific customer segments, such as "Small Business," to derive targeted insights.
 
 ### SQL Commands and Clauses
 - I utilized `SELECT` command to specify data retrieval.
