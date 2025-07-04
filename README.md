@@ -31,6 +31,12 @@ I created a database named `KMS` to serve as the foundation for all my data oper
 - **Table Joining and View Creation:**  
 I joined the `Db.KMS_Inventory` and `Db.Returned_Orders` tables on `Order_ID` to enable comprehensive analysis of order details and return statuses, and I created a view named `Db.KMS_VIEW` to facilitate this.
 
+```SQL
+CREATE DATABASE KMS
+
+CREATE SCHEMA Db
+```
+
 ```sql
 CREATE VIEW Db.KMS_VIEW
 AS
