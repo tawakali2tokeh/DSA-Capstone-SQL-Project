@@ -215,19 +215,10 @@ ORDER BY Order_Priority, Ship_Mode
 
 ## Insights Based On Findings
 
-- Sales Insights:  
-This analysis highlights products with high and low sales across various regions and customer segments.
-
-- Customer Insights:  
-This analysis identifies the top customers, the most profitable customers, and the customers with the least activity.
-
-- Order Insights:  
-This section provides details on order patterns, including customers with the highest and lowest order volumes, as well as customers who have returned orders.
-
-- Shipping Mode Insights:  
-This analysis offers insights into the most effective shipping modes based on order priority and the company's shipping expenditure.
-
-
+- Sales Insights: This analysis highlights products with high and low sales across various regions and customer segments.
+- Customer Insights: This analysis identifies the top customers, the most profitable customers, and the customers with the least activity.
+- Order Insights: This section provides details on order patterns, including customers with the highest and lowest order volumes, as well as customers who have returned orders.
+- Shipping Mode Insights: This analysis offers insights into the most effective shipping modes based on order priority and the company's shipping expenditure.
 
 ## Conclusion
 This analysis can enables the business owners to: 
