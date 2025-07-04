@@ -48,7 +48,6 @@ ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID
 
 ### Data Cleaning
 - I Converted data types for certain columns to ensure proper data handling. For example, I transformed Customer ID from SMALLINT to INT to allow the column to accommodate larger  data.
-
 ### Data Transformation Aggregation
 - I used aggregate functions such as `SUM()` to get total sales and shipping costs.
 - I aggregated data to identify top customers and products based on sales amount.
@@ -57,8 +56,7 @@ ON Db.Returned_Order.Order_ID = Db.KMS_Inventory.Order_ID
 ### SQL Commands and Clauses
 - I utilized `SELECT` command to specify data retrieval.
 - I used `GROUP BY` and `ORDER BY` to organize my result output.
-  
-### KMS Order problem and answers analysis
+  ### KMS Order problem and answers analysis
 
 *1. Which product category had the highest sales?*
 
