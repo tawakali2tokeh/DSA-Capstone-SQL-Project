@@ -1,5 +1,16 @@
 # DSA-Capstone-SQL-Project
 
+# Kultra Mega Store Inventory Analysis
+
+## Project Overview
+This project aims to analyze the KMS sales data to identify the most valuable customers, the most valuable products, customer segment and evaluate the effectiveness of the company's shipping expenditure.
+
+## Data Source
+I obtained the data from the DSA LMS platform. It contains KMS transaction records from 2009 to 2012. It contains information on sales, profit, shipping costs, shipping modes, customer IDs, and order details.
+
+## Tools Used
+- Microsoft SQL Server. [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads?msockid=3495a62c6de9650c173fb3da6c7764d6)
+
 ## Project Structure
 
 ### 1. Database Setup
