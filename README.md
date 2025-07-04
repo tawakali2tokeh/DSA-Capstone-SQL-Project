@@ -119,7 +119,7 @@ ORDER BY Lowest_Customer_Sales ASC
 ![table4](https://github.com/user-attachments/assets/b14be765-aa31-4eac-bae7-5bc3bf3efdfb)
 
 Answer:
-- Customer Engagement and Feedback: The company should hold one-on-one sessions with customers to understand why they aren't patronizing the business as much ans the company should also get product reviews and ratings from customers to identify areas for improvement.
+- Customer Engagement and Feedback: The company should hold one-on-one sessions with customers to understand why they aren't patronizing the business as much and the company should also get product reviews and ratings from customers to identify areas for improvement.
 
 - Order Management and Timeliness: The company should prioritize its own order processing and delivery, placing the same importance on timely orders as customers do and ensuring that orders are delivered on time for customer's satisfaction
    
