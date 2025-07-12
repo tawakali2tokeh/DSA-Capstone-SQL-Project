@@ -75,9 +75,6 @@ ORDER BY Highest_Sales desc
 ```
 ![nn](https://github.com/user-attachments/assets/58ef5390-27e7-4884-8ca3-e335d60a128d)
 
-<img width="250" height="42" alt="nn" src="https://github.com/user-attachments/assets/3fb94859-e84d-4aef-b233-0824f0df043c" />
-
-
 *2. What are the Top 3 and Bottom 3 regions in terms of sales?*
 
  ```SQL 
